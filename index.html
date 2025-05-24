@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>G</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+     <!-- Верхняя часть -->
+     <div class="icons-container">
+        <!-- Иконка 0 слева -->
+        <div class="left-icon">
+            <a href="#"><img src="img\logo zz.png" alt="Логотип" class="icon1"></a>
+        </div>
+        <!-- Остальные иконки справа -->
+        <div class="right-icons">
+            <div class="dropdown">
+                <button type="button" class="btn dropdown-toggle custom-dropdown-btn" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    <a href="#"><img src="img/1.png" alt="Иконка 1" class="icon"></a>
+                </button>
+                <form class="dropdown-menu p-4 custom-dropdown-menu">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                      <label class="form-check-label" for="dropdownCheck2">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn custom-submit-btn">Sign in</button>
+                </form>
+            </div>
+            <style>
+                /* Стили для кнопки dropdown */
+                .custom-dropdown-btn {
+                    background-color: #f8f9fa !important;
+                    border-color: #dee2e6 !important;
+                    padding: 0.25rem 0.5rem;
+                }
+                
+                /* Стили для выпадающего меню - ширина 350px */
+                .custom-dropdown-menu {
+                    background-color: #f8f9fa;
+                    border: 1px solid #dee2e6;
+                    width: 350px; /* Фиксированная ширина */
+                    min-width: unset; /* Отменяем минимальную ширину Bootstrap */
+                }
+                
+                /* Адаптивные стили для формы */
+                .custom-dropdown-menu .form-control {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                
+                /* Остальные стили остаются без изменений */
+                .custom-dropdown-btn:hover, 
+                .custom-dropdown-btn:focus {
+                    background-color: #e9ecef !important;
+                    border-color: #ced4da !important;
+                }
+                
+                .custom-submit-btn {
+                    background-color: #e9ecef !important;
+                    border-color: #ced4da !important;
+                    color: #bababa !important;
+                    width: 100%; /* Кнопка на всю ширину */
+                }
+                
+                .custom-submit-btn:hover {
+                    background-color: #dee2e6 !important;
+                    border-color: #adb5bd !important;
+                }
+                
+                .form-check-input:checked {
+                    background-color: #adb5bd;
+                    border-color: #adb5bd;
+                }
+                
+                .form-control:focus {
+                    border-color: #ced4da;
+                    box-shadow: 0 0 0 0.25rem rgba(206, 212, 218, 0.25);
+                }
+            </style>
+           <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #bababa;">
+              <a href="#"><img src="img/2.png" alt="Иконка 2" class="icon"></a>
+            </button>
+            <ul class="dropdown-menu" style="background-color: #e9ecef ;">
+              <li><button class="dropdown-item" type="button" style="font-size: 14px;">Классические новинки</button></li>
+              <li><button class="dropdown-item" type="button" style="font-size: 14px;">Повседневная одежда</button></li>
+              <li><button class="dropdown-item" type="button" style="font-size: 14px;">Спортивные новинки</button></li>
+              <li><button class="dropdown-item" type="button" style="font-size: 14px;">Верхняя одежда</button></li>
+            </ul>
+          </div>
+            <a href="#"><img src="img/4.png" alt="Иконка 4" class="icon"></a>
+            <a href="#"><img src="img/5.png" alt="Иконка 5" class="icon"></a>
+        </div>
+    </div>
+        <!-- Баннер -->
+        <div class="banner">
+            <img src="img\Frame 1.png" alt="Fashion-тренды" class="banner-img">
+        </div>
+            <h1>Каталог наших товаров</h1>
+            <!-- Разделитель -->
+            <div class="divider"></div>
+        </div>
+    <!--Контент  -->
+    <!-- Первый блок - Классическая -->
+    <div class="collection-block">
+        <h2 class="collection-title">Классические новинки</h2>
+        <div class="gallery-block">
+            <div class="gallery">
+                <div class="photo-card first">
+                    <img src="img\k.jpg" alt="Новинка 1">
+                    <div class="photo-title">Пиджак 3 200,00₽</div>
+                    <label class="icon-top-right">
+                        <input type="checkbox" class="fav-checkbox" hidden>
+                        <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                        <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+                      </label>
+                    <label class ="icon-bottom-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                        <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                                      </label>
+                </div>
+                <div class="photo-card">
+                    <img src="img\k2.jpg" alt="Новинка 2">
+                    <div class="photo-title">Пиджак 3 500,00₽</div>
+                    <label class="icon-top-right">
+                        <input type="checkbox" class="fav-checkbox" hidden>
+                        <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                        <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+                      </label>
+                     <label class ="icon-bottom-right">
+                        <input type="checkbox" class="fav-checkbox" hidden>
+                        <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                            <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                                          </label>
+                </div>      
+           <div class="photo-card">
+            <img src="img\k3.jpg" alt="Новинка 3">
+            <div class="photo-title">Пиджак 3 000,00₽</div>
+            <label class="icon-top-right">
+                <input type="checkbox" class="fav-checkbox" hidden>
+                <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+              </label>
+            <label class ="icon-bottom-right">
+                <input type="checkbox" class="fav-checkbox" hidden>
+                <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                    <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                                  </label>
+        </div>
+        <div class="photo-card last">
+            <img src="img\k4.jpg" alt="Новинка 4">
+            <div class="photo-title">Кофта 2 500,00₽</div>
+            <label class="icon-top-right">
+                <input type="checkbox" class="fav-checkbox" hidden>
+                <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+              </label>
+            <label class ="icon-bottom-right">
+                <input type="checkbox" class="fav-checkbox" hidden>
+                <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                    <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                                  </label>
+        </div>
+            </div>
+        </div>
+    </div>
+    <!-- Второй блок - Повседневная -->
+    <div class="collection-block">
+        <h2 class="collection-title">Повседневная одежда</h2>
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="img\z.jpg" alt="Повседневная 1">
+                <div class="photo-title">Рубашка 2 000,00₽</div>
+                <label class="icon-top-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                    <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+                  </label>
+                <label class ="icon-bottom-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                        <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                                      </label>
+            </div>
+            <div class="photo-card">
+                <img src="img\z2.jpg" alt="Повседневная 2">
+                <div class="photo-title">Рубашка 2 300,00₽</div>
+                <label class="icon-top-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                    <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+                  </label>
+
+                  </style>
+              <label class ="icon-bottom-right">
+                <input type="checkbox" class="fav-checkbox" hidden>
+                <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                    <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                                  </label>
+            </div>
+            <div class="photo-card">
+                <img src="img\z3.jpg" alt="Повседневная 3">
+                <div class="photo-title">Рубашка 2 000,00₽</div>
+                <label class="icon-top-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                    <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+                  </label>
+                  
+                  </style>
+                <label class ="icon-bottom-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                        <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                                      </label>
+            </div>
+            <div class="photo-card">
+                <img src="img\z4.jpg" alt="Повседневная 4">
+                <div class="photo-title">Рубашка  2 200,00₽</div>
+                <label class="icon-top-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                    <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+                  </label>
+                  
+              <label class ="icon-bottom-right">
+                <input type="checkbox" class="fav-checkbox" hidden>
+                <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                    <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                                  </label>
+        </div>
+        </div>
+    </div>
+   <!-- Третий блок -Спорт -->
+    <div class="collection-block">
+        <h2 class="collection-title">Спортивные новинки</h2>
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="img\s.jpg" alt="Спорт 1">
+                <div class="photo-title">Костюм 3 000,00₽</div>
+                <label class="icon-top-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                    <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+                  </label>
+                <label class ="icon-bottom-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                        <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                                      </label>
+            </div>
+            <div class="photo-card">
+                <img src="img\s2.jpg" alt="Спорт 2">
+                <div class="photo-title">Костюм 4 000,00₽</div>
+                <label class="icon-top-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                    <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+                  </label>
+                <label class ="icon-bottom-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                        <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                                      </label>
+            </div>
+            <div class="photo-card">
+                <img src="img\s3.jpg" alt="Спорт 3">
+                <div class="photo-title">Штаны 2 300,00₽</div>
+                <label class="icon-top-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                    <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+                  </label>
+                <label class ="icon-bottom-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                        <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                                      </label>
+            </div>
+            <div class="photo-card">
+                <img src="img\s4.jpg" alt="Спорт 4">
+                <div class="photo-title">Костюм 3 500,00₽</div>
+                <label class="icon-top-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                    <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+                  </label>
+                <label class ="icon-bottom-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                        <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                                      </label>
+            </div>
+        </div>
+        </div>
+    </div>
+   <!-- Четвертый блок -Верхняя -->
+    <div class="collection-block">
+        <h2 class="collection-title">Верхняя одежда</h2>
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="img\v.jpg" alt="Верхняя одежда 1">
+                <div class="photo-title">Куртка 4 000,00₽</div>
+                <label class="icon-top-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                    <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+                  </label>
+           <label class ="icon-bottom-right">
+            <input type="checkbox" class="fav-checkbox" hidden>
+            <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                              </label>
+        </div>
+            <div class="photo-card">
+                <img src="img\v2.jpg" alt="Верхняя одежда 2">
+                <div class="photo-title">Куртка 3 300,00₽</div>
+                <label class="icon-top-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                    <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+                  </label>
+           <label class ="icon-bottom-right">
+            <input type="checkbox" class="fav-checkbox" hidden>
+            <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                              </label>
+        </div>
+            <div class="photo-card">
+                <img src="img\v3.jpg" alt="Верхняя одежда 3">
+                <div class="photo-title">Куртка 3 500,00₽</div>
+                <label class="icon-top-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                    <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+                  </label>
+          <label class ="icon-bottom-right">
+            <input type="checkbox" class="fav-checkbox" hidden>
+            <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                              </label>
+        </div>
+            <div class="photo-card">
+                <img src="img\v4.jpg" alt="Верхняя одежда 4">
+                <div class="photo-title">Безрукавка 3 500,00₽</div>
+                <label class="icon-top-right">
+                    <input type="checkbox" class="fav-checkbox" hidden>
+                    <img src="img/4.png" alt="Избранное" class="favorite-icon default-icon">
+                    <img src="img/44.png" alt="В избранном" class="favorite-icon active-icon">
+                  </label>
+           <label class ="icon-bottom-right">
+            <input type="checkbox" class="fav-checkbox" hidden>
+            <img src="img\5.png" alt="Корзина" class="favorite-icon default-icon">
+                                <img src="img/55.png" alt="В избранном" class="favorite-icon active-icon">
+                              </label>
+                              <style>
+                                .fav-checkbox:checked ~ .default-icon {
+                                  display: none;
+                                }
+                                .fav-checkbox:not(:checked) ~ .active-icon {
+                                  display: none;
+                                }
+                                .active-icon, .default-icon {
+                                  width: 30px;
+                                  height: 30px;
+                                }
+                              </style>
+        </div>
+        </div>
+    </div>
+  
+   <h1> ZARINA - это стильная комфортная одежда для женщин </h1>
+<div class="a">
+     <!-- Подвал -->
+    <div class="phone-number">8 800 80 80 888</div>
+    <div class="free-call">Бесплатный звонок по России</div>
+    
+    <!-- Социальные сети -->
+    <div class="social-icons">
+        <a href="https://vk.com/" class="social-link"><img src="img\vk.png" alt="Соцсеть 1"></a>
+        <a href="https://www.instagram.com/" class="social-link"><img src="img\inst.png" alt="Соцсеть 2"></a>
+        <a href="https://www.tiktok.com/" class="social-link"><img src="img\tok.png" alt="Соцсеть 3"></a>
+        <a href="https://twitter.com/" class="social-link"><img src="img\twitter.png" alt="Соцсеть 4"></a>
+        <a href="https://telegram.org/" class="social-link"><img src="img\telegramm.png" alt="Соцсеть 5"></a>
+    </div>
+    
+<!-- Платежные системы -->
+<div class="payment-methods">
+    <a href="#" class="payment-link"><img src="img\visa.png" alt="Visa"></a>
+    <a href="#" class="payment-link"><img src="img\mastercard.png" alt="Mastercard"></a>
+    <a href="#" class="payment-link"><img src="img\credit-card.png" alt="Mir"></a>
+</div>
+
+<div class="copyright">
+    2025 Zarina Все права защищены
+</div>
+
+<!-- Ссылки на скачивание -->
+<div class="download-links">
+ <a href="https://www.apple.com/app-store/" class="download-btn">
+     <img src="img\apple.png" alt="App Store" class="download-icon">
+     <span class="download-text">доступно в App Store </span>
+ </a>
+ <a href="https://play.google.com/store/apps;?hl=ru" class="download-btn">
+     <img src="img\google.png" alt="Google Play" class="download-icon">
+     <span class="download-text">доступно в Google Play</span>
+ </a>
+</div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+   </body>
+   </html>
